@@ -21,12 +21,31 @@ function updateTime() {
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityTime = moment().tz(cityTimeZone);
-  console.log(cityTime.format("MMM D0 YYYY"));
-}
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = cityTimeZone;
+  citiesElement = '
+  <div class="city" id="los-angeles">
+    <div>
+        <h2>Los Angeles 🇺🇸</h2>
+        <div class="date"></div>
+    </div>
+    <div class="time"><small></small></div>
+</div>
+
+<div class="city" id="london">
+  <div>
+    <h2>London 🇬🇧</h2>
+    <div class="date"></div>
+</div>
+  <div class="time"><small></small></div>
+</div>
+  
+  '
+
 
 updateTime();
 setInterval(updateTime, 1000);
 
-let citiesSelect = document.querySelector("#city");
+let citiesSelectElement = document.querySelector("#city");
 
-citiesSelect.addEventListener("change", updateCity);
+citiesSelectElement.addEventListener("change", updateCity);

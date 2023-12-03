@@ -1,30 +1,30 @@
 body {
   background-color: #f9f7fe;
-  font-family:"Comic Sans MS", "Comic Sans", cursive; 
-  
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
 .container {
   max-width: 600px;
-  margin: 60px auto;
+  margin: 60px auto; /* Keep only this margin declaration for centering */
   background: white;
   padding: 30px;
-  margin: 60px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .city {
- display: flex;
- margin: 20px 0px;
- justify-content: space-between;
- align-items: center;
- border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
- padding: 30px;
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 30px;
 }
 
 .city:last-child {
-  border: none;
+  border-bottom: none;
 }
+
 
 
 h2 {
@@ -32,39 +32,36 @@ h2 {
 }
 
 .date {
-
-opacity: 0.5;
+  opacity: 0.5;
 }
 
 .time {
-
   font-size: 28px;
   font-weight: bold;
 }
 
 .time small {
-
   font-size: 18px;
-  line-height:36px;
+  line-height: 36px;
   vertical-align: middle;
 }
 
 select {
   display: block;
-  width:100%;
+  width: 100%;
   padding: 10px;
   border-radius: 4px;
-  font-family:"Comic Sans MS", "Comic Sans", cursive; 
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 h1 {
-text-align: center;
-font-family:"Comic Sans MS", "Comic Sans", cursive; 
-font-size: 36px;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 36px;
 }
 
-  footer {
-    text-align: center;
-    font-size: 18px;
-    color: rgba(169,169,169);
-  }
+footer {
+  text-align: center;
+  font-size: 18px;
+  color: blue;
+}
